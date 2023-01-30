@@ -21,19 +21,8 @@ export const data = graphql`
       title
       introduction
       content {
-        raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            gatsbyImageData(
-              width: 800
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-            description
-            __typename
-          }
-        }
+        raw 
+        
       }
       createdAt(formatString: "DD MMMM, YYYY")
     }
